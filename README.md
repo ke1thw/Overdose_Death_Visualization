@@ -40,7 +40,7 @@ Upon loading the dashboard, users can interact with the map to select a state. T
 - **Change Data Type in Line Chart**: Use the dropdown menu to switch between death rates, crude rates, or prescription data.
 
 ## Vercel
-You can also visit the webpage via the link.
+You can also visit the webpage via `https://opioiddeath.vercel.app/`.
 ## Contributing
 Contributions to enhance the dashboard are welcome. Please follow the standard fork-and-pull request workflow on GitHub. Ensure that your code adheres to existing style guidelines and has been tested adequately.
 
