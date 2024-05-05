@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: auto minmax(auto, 1fr) auto; /* Adjust rows to content */
+    width: 100%;
+    padding: 20px;
+    gap: 20px; /* Space between grid items */
+    margin: 0 auto; /* Center the container */
+}
+
+.title {
+    grid-column: 1 / -1; /* Title spans across both columns */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.map {
+    grid-column: 1; /* First column */
+    grid-row: 2; /* Second row */
+    width: 100%;
+    height: auto; /* Height based on content */
+    max-height: 800px; /* Optional max height */
+}
+
+.description {
+    grid-column: 1; /* First column */
+    grid-row: 3; /* Third row, under the map */
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chartContainer {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2; /* Second column */
+    grid-row: 2 / 4; /* Span from second to fourth row */
+    gap: 10px;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+.chart {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height to content */
+}
